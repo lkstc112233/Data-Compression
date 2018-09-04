@@ -12,7 +12,7 @@
 
 void outputByte(int byte) {
     for (int i = 8; i > 0; --i) {
-        std::cout << ((byte << (i - 1))? '1': '0');
+        std::cout << ((byte & (i - 1))? '1': '0');
     }
 }
 
@@ -25,6 +25,6 @@ int main(int argc, const char * argv[]) {
     while ((byte = inf.get()) != EOF) {
         outputByte(byte);
     }
-    std::cout << std::endl;
+    std::cout << 'b' << std::endl;
     return 0;
 }

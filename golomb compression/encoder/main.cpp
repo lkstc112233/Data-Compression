@@ -89,7 +89,11 @@ int main(int argc, const char * argv[]) {
     double p = (useZero? zeroCount: oneCount) / double(zeroCount + oneCount);
     double mup = p * log(2) / (1 - p);
     int m = hob(int(mup));
+    if (m == 0) {
+        m = 1;
+    }
     int lgm = log2(m);
+    std::cerr << "p = " << p << ", mup = " << mup << ", m = " << m << ", lgm = " << lgm << std::endl;
     bool care = firstBitIsZero ^ useZero;
     int careLast = 0;
     int codeLength = 2;
@@ -98,6 +102,6 @@ int main(int argc, const char * argv[]) {
         careLast = care ? 1 : 0;
     }
     std::cout << (care? '0': '1') << std::endl;
-    std::cout << "CR: " << (zeroCount + oneCount) << "/ " << codeLength << " = " << ((zeroCount + oneCount) / double(codeLength)) << std::endl;
+    std::cerr << "CR: " << (zeroCount + oneCount) << "/ " << codeLength << " = " << ((zeroCount + oneCount) / double(codeLength)) << std::endl;
     return 0;
 }
