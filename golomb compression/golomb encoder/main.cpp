@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  encoder
+//  golomb encoder
 //
 //  Created by Xu Ke on 2018/9/4.
 //  Copyright © 2018 Must Studio. All rights reserved.
