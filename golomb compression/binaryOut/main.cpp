@@ -12,7 +12,7 @@
 
 void outputByte(int byte) {
     for (int i = 8; i > 0; --i) {
-        std::cout << (byte << (i - 1));
+        std::cout << ((byte << (i - 1))? '1': '0');
     }
 }
 
