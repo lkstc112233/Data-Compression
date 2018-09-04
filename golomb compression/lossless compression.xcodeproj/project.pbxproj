@@ -43,7 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0A11068D213F1C9A00C87B4D /* encoder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = encoder; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A11068D213F1C9A00C87B4D /* golombEncoder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = golombEncoder; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A11068F213F1C9A00C87B4D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0A110698213F1CAF00C87B4D /* decoder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = decoder; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A11069A213F1CAF00C87B4D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		0A110676213F18F900C87B4D = {
 			isa = PBXGroup;
 			children = (
-				0A11068E213F1C9A00C87B4D /* encoder */,
+				0A11068E213F1C9A00C87B4D /* golomb encoder */,
 				0A110699213F1CAF00C87B4D /* decoder */,
 				0A980F9E213F2D05003A110D /* binaryOut */,
 				0A110680213F18F900C87B4D /* Products */,
@@ -89,19 +89,19 @@
 		0A110680213F18F900C87B4D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A11068D213F1C9A00C87B4D /* encoder */,
+				0A11068D213F1C9A00C87B4D /* golombEncoder */,
 				0A110698213F1CAF00C87B4D /* decoder */,
 				0A980F9D213F2D05003A110D /* binaryOut */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0A11068E213F1C9A00C87B4D /* encoder */ = {
+		0A11068E213F1C9A00C87B4D /* golomb encoder */ = {
 			isa = PBXGroup;
 			children = (
 				0A11068F213F1C9A00C87B4D /* main.cpp */,
 			);
-			path = encoder;
+			path = "golomb encoder";
 			sourceTree = "<group>";
 		};
 		0A110699213F1CAF00C87B4D /* decoder */ = {
@@ -123,9 +123,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0A11068C213F1C9A00C87B4D /* encoder */ = {
+		0A11068C213F1C9A00C87B4D /* golombEncoder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A110693213F1C9A00C87B4D /* Build configuration list for PBXNativeTarget "encoder" */;
+			buildConfigurationList = 0A110693213F1C9A00C87B4D /* Build configuration list for PBXNativeTarget "golombEncoder" */;
 			buildPhases = (
 				0A110689213F1C9A00C87B4D /* Sources */,
 				0A11068A213F1C9A00C87B4D /* Frameworks */,
@@ -135,9 +135,9 @@
 			);
 			dependencies = (
 			);
-			name = encoder;
+			name = golombEncoder;
 			productName = encoder;
-			productReference = 0A11068D213F1C9A00C87B4D /* encoder */;
+			productReference = 0A11068D213F1C9A00C87B4D /* golombEncoder */;
 			productType = "com.apple.product-type.tool";
 		};
 		0A110697213F1CAF00C87B4D /* decoder */ = {
@@ -206,7 +206,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A11068C213F1C9A00C87B4D /* encoder */,
+				0A11068C213F1C9A00C87B4D /* golombEncoder */,
 				0A110697213F1CAF00C87B4D /* decoder */,
 				0A980F9C213F2D05003A110D /* binaryOut */,
 			);
@@ -410,7 +410,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A110693213F1C9A00C87B4D /* Build configuration list for PBXNativeTarget "encoder" */ = {
+		0A110693213F1C9A00C87B4D /* Build configuration list for PBXNativeTarget "golombEncoder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A110691213F1C9A00C87B4D /* Debug */,
