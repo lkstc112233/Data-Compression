@@ -7,11 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A110683213F18F900C87B4D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A110682213F18F900C87B4D /* main.cpp */; };
+		0A110690213F1C9A00C87B4D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A11068F213F1C9A00C87B4D /* main.cpp */; };
+		0A11069B213F1CAF00C87B4D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A11069A213F1CAF00C87B4D /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0A11067D213F18F900C87B4D /* CopyFiles */ = {
+		0A11068B213F1C9A00C87B4D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		0A110696213F1CAF00C87B4D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +33,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0A11067F213F18F900C87B4D /* golomb compression */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "golomb compression"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A110682213F18F900C87B4D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0A11068D213F1C9A00C87B4D /* encoder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = encoder; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A11068F213F1C9A00C87B4D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0A110698213F1CAF00C87B4D /* decoder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = decoder; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A11069A213F1CAF00C87B4D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0A11067C213F18F900C87B4D /* Frameworks */ = {
+		0A11068A213F1C9A00C87B4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A110695213F1CAF00C87B4D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +60,8 @@
 		0A110676213F18F900C87B4D = {
 			isa = PBXGroup;
 			children = (
-				0A110681213F18F900C87B4D /* golomb compression */,
+				0A11068E213F1C9A00C87B4D /* encoder */,
+				0A110699213F1CAF00C87B4D /* decoder */,
 				0A110680213F18F900C87B4D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,37 +69,63 @@
 		0A110680213F18F900C87B4D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A11067F213F18F900C87B4D /* golomb compression */,
+				0A11068D213F1C9A00C87B4D /* encoder */,
+				0A110698213F1CAF00C87B4D /* decoder */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0A110681213F18F900C87B4D /* golomb compression */ = {
+		0A11068E213F1C9A00C87B4D /* encoder */ = {
 			isa = PBXGroup;
 			children = (
-				0A110682213F18F900C87B4D /* main.cpp */,
+				0A11068F213F1C9A00C87B4D /* main.cpp */,
 			);
-			path = "golomb compression";
+			path = encoder;
+			sourceTree = "<group>";
+		};
+		0A110699213F1CAF00C87B4D /* decoder */ = {
+			isa = PBXGroup;
+			children = (
+				0A11069A213F1CAF00C87B4D /* main.cpp */,
+			);
+			path = decoder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0A11067E213F18F900C87B4D /* golomb compression */ = {
+		0A11068C213F1C9A00C87B4D /* encoder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A110686213F18F900C87B4D /* Build configuration list for PBXNativeTarget "golomb compression" */;
+			buildConfigurationList = 0A110693213F1C9A00C87B4D /* Build configuration list for PBXNativeTarget "encoder" */;
 			buildPhases = (
-				0A11067B213F18F900C87B4D /* Sources */,
-				0A11067C213F18F900C87B4D /* Frameworks */,
-				0A11067D213F18F900C87B4D /* CopyFiles */,
+				0A110689213F1C9A00C87B4D /* Sources */,
+				0A11068A213F1C9A00C87B4D /* Frameworks */,
+				0A11068B213F1C9A00C87B4D /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "golomb compression";
-			productName = "golomb compression";
-			productReference = 0A11067F213F18F900C87B4D /* golomb compression */;
+			name = encoder;
+			productName = encoder;
+			productReference = 0A11068D213F1C9A00C87B4D /* encoder */;
+			productType = "com.apple.product-type.tool";
+		};
+		0A110697213F1CAF00C87B4D /* decoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A11069C213F1CAF00C87B4D /* Build configuration list for PBXNativeTarget "decoder" */;
+			buildPhases = (
+				0A110694213F1CAF00C87B4D /* Sources */,
+				0A110695213F1CAF00C87B4D /* Frameworks */,
+				0A110696213F1CAF00C87B4D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = decoder;
+			productName = decoder;
+			productReference = 0A110698213F1CAF00C87B4D /* decoder */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -91,7 +137,10 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Must Studio";
 				TargetAttributes = {
-					0A11067E213F18F900C87B4D = {
+					0A11068C213F1C9A00C87B4D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					0A110697213F1CAF00C87B4D = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -108,17 +157,26 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A11067E213F18F900C87B4D /* golomb compression */,
+				0A11068C213F1C9A00C87B4D /* encoder */,
+				0A110697213F1CAF00C87B4D /* decoder */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0A11067B213F18F900C87B4D /* Sources */ = {
+		0A110689213F1C9A00C87B4D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A110683213F18F900C87B4D /* main.cpp in Sources */,
+				0A110690213F1C9A00C87B4D /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A110694213F1CAF00C87B4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A11069B213F1CAF00C87B4D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +292,7 @@
 			};
 			name = Release;
 		};
-		0A110687213F18F900C87B4D /* Debug */ = {
+		0A110691213F1C9A00C87B4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -242,7 +300,23 @@
 			};
 			name = Debug;
 		};
-		0A110688213F18F900C87B4D /* Release */ = {
+		0A110692213F1C9A00C87B4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0A11069D213F1CAF00C87B4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0A11069E213F1CAF00C87B4D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -262,11 +336,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A110686213F18F900C87B4D /* Build configuration list for PBXNativeTarget "golomb compression" */ = {
+		0A110693213F1C9A00C87B4D /* Build configuration list for PBXNativeTarget "encoder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A110687213F18F900C87B4D /* Debug */,
-				0A110688213F18F900C87B4D /* Release */,
+				0A110691213F1C9A00C87B4D /* Debug */,
+				0A110692213F1C9A00C87B4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A11069C213F1CAF00C87B4D /* Build configuration list for PBXNativeTarget "decoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A11069D213F1CAF00C87B4D /* Debug */,
+				0A11069E213F1CAF00C87B4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
