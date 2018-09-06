@@ -10,6 +10,7 @@
 		0A110690213F1C9A00C87B4D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A11068F213F1C9A00C87B4D /* main.cpp */; };
 		0A11069B213F1CAF00C87B4D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A11069A213F1CAF00C87B4D /* main.cpp */; };
 		0A980FA0213F2D05003A110D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A980F9F213F2D05003A110D /* main.cpp */; };
+		0A980FAB213F3977003A110D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A980FAA213F3977003A110D /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		0A980FA6213F3977003A110D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +59,8 @@
 		0A11069A213F1CAF00C87B4D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0A980F9D213F2D05003A110D /* binaryOut */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = binaryOut; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A980F9F213F2D05003A110D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0A980FA8213F3977003A110D /* LempelZivEncoder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LempelZivEncoder; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A980FAA213F3977003A110D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +85,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0A980FA5213F3977003A110D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +101,7 @@
 				0A11068E213F1C9A00C87B4D /* golomb encoder */,
 				0A110699213F1CAF00C87B4D /* decoder */,
 				0A980F9E213F2D05003A110D /* binaryOut */,
+				0A980FA9213F3977003A110D /* LempelZivEncoder */,
 				0A110680213F18F900C87B4D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +112,7 @@
 				0A11068D213F1C9A00C87B4D /* golombEncoder */,
 				0A110698213F1CAF00C87B4D /* decoder */,
 				0A980F9D213F2D05003A110D /* binaryOut */,
+				0A980FA8213F3977003A110D /* LempelZivEncoder */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +139,14 @@
 				0A980F9F213F2D05003A110D /* main.cpp */,
 			);
 			path = binaryOut;
+			sourceTree = "<group>";
+		};
+		0A980FA9213F3977003A110D /* LempelZivEncoder */ = {
+			isa = PBXGroup;
+			children = (
+				0A980FAA213F3977003A110D /* main.cpp */,
+			);
+			path = LempelZivEncoder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +203,23 @@
 			productReference = 0A980F9D213F2D05003A110D /* binaryOut */;
 			productType = "com.apple.product-type.tool";
 		};
+		0A980FA7213F3977003A110D /* LempelZivEncoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A980FAC213F3977003A110D /* Build configuration list for PBXNativeTarget "LempelZivEncoder" */;
+			buildPhases = (
+				0A980FA4213F3977003A110D /* Sources */,
+				0A980FA5213F3977003A110D /* Frameworks */,
+				0A980FA6213F3977003A110D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LempelZivEncoder;
+			productName = LempelZivEncoder;
+			productReference = 0A980FA8213F3977003A110D /* LempelZivEncoder */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -190,6 +236,9 @@
 						CreatedOnToolsVersion = 9.4.1;
 					};
 					0A980F9C213F2D05003A110D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					0A980FA7213F3977003A110D = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -209,6 +258,7 @@
 				0A11068C213F1C9A00C87B4D /* golombEncoder */,
 				0A110697213F1CAF00C87B4D /* decoder */,
 				0A980F9C213F2D05003A110D /* binaryOut */,
+				0A980FA7213F3977003A110D /* LempelZivEncoder */,
 			);
 		};
 /* End PBXProject section */
@@ -235,6 +285,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A980FA0213F2D05003A110D /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A980FA4213F3977003A110D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A980FAB213F3977003A110D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +456,22 @@
 			};
 			name = Release;
 		};
+		0A980FAD213F3977003A110D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0A980FAE213F3977003A110D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -433,6 +507,15 @@
 			buildConfigurations = (
 				0A980FA1213F2D05003A110D /* Debug */,
 				0A980FA2213F2D05003A110D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A980FAC213F3977003A110D /* Build configuration list for PBXNativeTarget "LempelZivEncoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A980FAD213F3977003A110D /* Debug */,
+				0A980FAE213F3977003A110D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
